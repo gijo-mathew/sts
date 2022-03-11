@@ -1,6 +1,7 @@
 package com.gijo.sts.twitter.to.kafka.service;
 
 import com.gijo.sts.twitter.to.kafka.service.config.AppConfig;
+import com.gijo.sts.twitter.to.kafka.service.runner.StreamRunner;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,9 +12,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
     private final AppConfig appConfig;
+    private final StreamRunner streamRunner;
 
-    public TwitterToKafkaServiceApplication(AppConfig appConfig) {
+    public TwitterToKafkaServiceApplication(AppConfig appConfig,
+                                            StreamRunner streamRunner) {
         this.appConfig = appConfig;
+        this.streamRunner = streamRunner;
     }
 
     public static void main(String[] args){
@@ -26,6 +30,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
         for(String key:appConfig.getTwitterKeywords()){
             log.info("keyword {}", key);
         }
+        streamRunner.start();
 
     }
 }

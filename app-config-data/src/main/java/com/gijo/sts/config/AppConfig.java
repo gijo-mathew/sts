@@ -1,4 +1,4 @@
-package com.gijo.sts.twitter.to.kafka.service.config;
+package com.gijo.sts.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

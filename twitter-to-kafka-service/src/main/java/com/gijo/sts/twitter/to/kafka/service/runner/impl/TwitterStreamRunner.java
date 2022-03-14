@@ -1,6 +1,6 @@
 package com.gijo.sts.twitter.to.kafka.service.runner.impl;
 
-import com.gijo.sts.twitter.to.kafka.service.config.AppConfig;
+import com.gijo.sts.config.AppConfig;
 import com.gijo.sts.twitter.to.kafka.service.listeners.TwitterToKafkaStatusListener;
 import com.gijo.sts.twitter.to.kafka.service.runner.StreamRunner;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +11,6 @@ import twitter4j.TwitterStream;
 import twitter4j.TwitterStreamFactory;
 
 import javax.annotation.PreDestroy;
-import java.util.logging.Filter;
 
 @Slf4j
 @Component

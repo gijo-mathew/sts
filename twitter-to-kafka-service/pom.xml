@@ -40,6 +40,17 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.6.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.gijo</groupId>
+            <artifactId>app-config-data</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>com.gijo</groupId>
+            <artifactId>app-config-data</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>-->
     </dependencies>
 
     <build>

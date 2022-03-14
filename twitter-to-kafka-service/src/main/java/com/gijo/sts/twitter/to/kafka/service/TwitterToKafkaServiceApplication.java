@@ -8,11 +8,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Component;
 
 @Slf4j
 @SpringBootApplication
-@ComponentScan(basePackages = "com.gijo")
+@ComponentScan(basePackages = "com.gijo.sts")
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
     private final AppConfig appConfig;

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>sts</artifactId>
-        <groupId>com.gijo</groupId>
+        <groupId>com.gijo.sts</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -41,7 +41,7 @@
             <version>2.6.4</version>
         </dependency>
         <dependency>
-            <groupId>com.gijo</groupId>
+            <groupId>com.gijo.sts</groupId>
             <artifactId>app-config-data</artifactId>
             <version>${project.version}</version>
         </dependency>
